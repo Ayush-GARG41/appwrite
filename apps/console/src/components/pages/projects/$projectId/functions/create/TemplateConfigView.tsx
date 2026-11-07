@@ -299,8 +299,6 @@ export function TemplateConfigView({
         runtime: runtime as Runtime,
         execute: isPublic
           ? ['any']
-          : template.permissions?.length
-            ? template.permissions
             : [],
         events: template.events?.length ? template.events : undefined,
         schedule: template.cron || undefined,
